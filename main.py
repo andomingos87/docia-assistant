@@ -26,7 +26,7 @@ async def receive_message(request: Request):
     # Definir URL e cabeçalhos para interagir com a API do Bubble
     bubble_api_url = "https://docia-16751.bubbleapps.io/version-test/api/1.1/obj/user"
     headers = {
-        "Authorization": f"{BUBBLE_API_KEY}",
+        "Authorization": f"Bearer {BUBBLE_API_KEY}",
         "Content-Type": "application/json",
     }
 
